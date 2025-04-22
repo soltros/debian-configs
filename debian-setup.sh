@@ -108,7 +108,7 @@ install_flatpaks() {
 # Install VirtualBox .run file and fix module build
 install_virtualbox() {
     echo "Installing kernel headers and DKMS for VirtualBox modules..."
-    sudo apt install -y dkms linux-headers-$(uname -r)
+    sudo apt install -y dkms linux-headers-amd64
 
     echo "Downloading VirtualBox .run installer..."
     VBOX_URL="https://download.virtualbox.org/virtualbox/7.1.8/VirtualBox-7.1.8-168469-Linux_amd64.run"
